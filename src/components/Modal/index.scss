@@ -1,0 +1,85 @@
+@use "../../sass/variables" as *;
+
+
+.overlay {
+    background: #00000066;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.modalContainer {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    
+    border-radius: 30px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    z-index: 9999;
+}
+
+.closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+    label {
+        display: block;
+        padding: 10px;
+        width: 67%;
+    }
+
+    input {
+        display: block;
+        width: 524px;
+        height: 40px;
+        
+        border-radius: 10px;
+        border: $border-input-color;
+        padding-left: 10px;
+    }
+
+    input:focus {        
+        border: transparent;
+    }
+
+    .input-msg {
+        height: 150px;
+    }
+        
+button {
+    background: #0C70F2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 300px;
+    height: 40px;
+    
+    border-radius: 10px;
+    border: 1px solid #7A7A7A;
+    margin: 35px;
+    transition: .3s;
+}
+
+    button:hover {
+        cursor: pointer;
+        background-color: #144d97;
+        transition: .3s;
+        transform: scale(0.9);
+    }

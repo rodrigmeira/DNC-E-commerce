@@ -1,0 +1,177 @@
+@use "../../sass/variables" as *;
+
+.product-detail-modal {    
+    background-color: #2d2d2d66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+  
+    &__container {
+        background: #fff;
+        border-radius: 100px;
+        box-shadow: #00000059 0px 5px 15px;
+        display: flex;
+        padding: 110px 80px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__checkPix {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        
+        input {
+            width: 20px;
+            height: 20px;
+        }
+
+        img {
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+        }
+        
+    }
+    &__checkCard {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+
+        input {
+            box-sizing: border-box;
+            width: 20px;
+            height: 20px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        
+    }
+    &__buttons {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+
+        .btn1 {
+            background: #0c70f2;
+            color: #fff;
+            
+            border: transparent;
+            border-radius: 10px;
+           
+            height: 60px;
+            margin: 0;
+            width: 400px;
+            
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+
+            transition: .3s;
+        }
+        
+                .btn1:hover {
+                    transition: .3s;
+                    background: #0b4ba0;
+                    transform: scale(0.9);
+                    
+                    cursor: pointer;
+                }
+        
+        .btn2 {
+            background: #676767;
+            color: #fff;
+            
+            border: transparent;
+            border-radius: 10px;
+            
+            height: 60px;
+            margin-top: 28px;
+            width: 400px;
+            
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            
+            transition: .3s;
+        }
+        
+                .btn2:hover {
+                    transition: .3s;
+                    background: #3f3f3f;
+                    transform: scale(0.9);
+                    cursor: pointer;
+                }
+    }
+
+    &__tagFrete {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+
+    }
+    
+    &__frete {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 50px;
+    }
+    &__frete input{
+        border-radius: 10px 0 0 10px;
+        width: 200px;
+        border-color: #0c70f2;
+    }
+
+    &__frete button{
+        margin: 0;
+        border-color: #0c70f2;
+        border-radius: 0 10px 10px 0;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.product-detail__card {
+    margin-top: 27px;
+}
+
+.product-detail-modal__right-side {
+    h1 {
+        color: #0c70f2;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    h3 {
+        border-bottom: 3px solid #0c70f2;
+        font-size: 40px;
+        font-weight: 400;
+        padding: 28px 0;
+        margin-bottom: 41px;
+    }
+    h4 {
+        color: #2d2d2d;
+        font-size: 32px;
+        font-weight: 900;
+        margin-bottom: 27px;
+    }
+    p {
+        color: #2d2d2d;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 21px;
+    }
+}

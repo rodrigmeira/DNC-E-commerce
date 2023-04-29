@@ -1,0 +1,22 @@
+@use "../../sass/variables" as *;
+
+
+.background-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+
+    &__product{
+        background-color: rgba(217, 217, 217, 0.7);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

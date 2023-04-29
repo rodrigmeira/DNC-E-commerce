@@ -1,0 +1,97 @@
+@use "../../sass/variables" as *;
+
+header {
+    background-color: $header-background;
+    padding-bottom: 20px;
+}
+
+.header-search {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__cart {
+        cursor: pointer;
+        height: 40px;
+        fill: #fff;
+        // transition: .3s;
+    }
+
+    &__cart:hover {
+        fill: $contrast-color;
+        transition: .3s;
+    }
+
+    img {
+        margin: 20px;
+    }
+    &__input {
+        position: relative;
+
+        svg {
+                color: #808080;
+                font-size: 18px;
+                height: 27px;
+                left: 4px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+        }
+        input {
+            border-radius: 13px;
+            border: $border-input-color;
+            height: 45px;
+            padding-left: 55px;
+            width: 980px;
+
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    }
+
+}
+
+.header-nav {
+    
+    ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    li {
+        cursor: pointer;
+        color: $white;
+        font-size: 30px;
+        font-weight: 600;
+        list-style: none;
+        padding: 25px 0;
+        position: relative;
+    }
+    li:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 12px;
+        left: 0;
+        background-color: #f8f8f8;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all .3s ease-in-out 0s;
+        transition: all .3s ease-in-out 0s;
+    }
+
+         li:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+         }
+}
